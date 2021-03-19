@@ -16,4 +16,5 @@ permalink: /about/
 
 这个项目参考了golangweekly和rust周报
 
-每周日更新
+每周更新
+
