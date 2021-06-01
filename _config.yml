@@ -1,3 +1,22 @@
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
+theme: jekyll-theme-primer
+
+github:
+  private: false
+  license:
+    name: Creative Commons Zero v1.0 Universal
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/wanghenshui/cppweeklynews"
+  
+title: C++ 动态新闻推送
 plugins:
   - jekyll-feed
 name: C++ 动态新闻推送
