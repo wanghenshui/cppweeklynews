@@ -1,6 +1,7 @@
 exclude:
   - node_modules
   - script
+  - posts/template.md
 
 sass:
   style: :compressed
@@ -12,16 +13,15 @@ github:
   license:
     name: Creative Commons Zero v1.0 Universal
   source:
-    branch: "master"
+    branch: "dev"
     path: "/"
   repository_url: "https://github.com/wanghenshui/cppweeklynews"
   
-title: C++ 动态新闻推送
 plugins:
   - jekyll-feed
 name: C++ 动态新闻推送
 description: 每周更新c++相关信息
-url: https://wanghenshui.github.io/cppweeklynews/
+url: https://wanghenshui.github.io
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
