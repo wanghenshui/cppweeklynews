@@ -33,7 +33,7 @@ title:  第N期
 
 ## 视频
 
-- [C++ Weekly - Ep 273 - C++23's Lambda Simplification (With Commodore 64 Example)](https://www.youtube.com/watch?v=fPWWo0MVK34) 讨论mutable场景下的lambda的()不能省掉。c++23有提案修订。
+- [C++ Weekly ](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
 
 `TODO fix link then remove this line`
 
