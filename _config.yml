@@ -5,8 +5,8 @@ exclude:
 
 sass:
   style: :compressed
-
-remote_theme: pages-themes/primer
+baseurl:
+theme: jekyll-theme-primer
 
 github:
   private: false

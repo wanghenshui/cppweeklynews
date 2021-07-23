@@ -1,0 +1,21 @@
+{
+  "name": "jekyll-theme-primer",
+  "version": "0.1.0",
+  "description": "A Jekyll theme based on GitHub's Primer styles",
+  "main": "index.html",
+  "scripts": {
+    "test": "script/cibuild"
+  },
+  "author": "Ben Balter",
+  "license": "MIT",
+  "dependencies": {
+    "primer-base": "^1.9.2",
+    "primer-layout": "^1.6.2",
+    "primer-markdown": "^3.7.13",
+    "primer-support": "^4.7.2",
+    "primer-utilities": "^4.14.4"
+  },
+  "devDependencies": {
+    "@primer/sync": "^0.1.0"
+  }
+}
