@@ -23,13 +23,13 @@ title:  第N期
 
 ###  编译器信息最新动态推荐关注hellogcc公众号
 
-[本周周报github直达](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-05-26.md)
+[本周周报github直达](https://github.com/hellogcc/osdt-weekly/)
 
 `TODO fix link then remove this line`
 
 ## 文章
 
-- [c++ tip of week 227 **Did you know that `std::variant` become valueless by exception?**](https://github.com/QuantlabFinancial/cpp_tip_of_the_week/blob/master/227.md)
+- [c++ tip of week ](https://github.com/QuantlabFinancial/cpp_tip_of_the_week/)
 
 `TODO fix link then remove this line`
 
