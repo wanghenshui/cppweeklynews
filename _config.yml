@@ -6,7 +6,7 @@ exclude:
 sass:
   style: :compressed
 
-theme: jekyll-theme-primer
+remote_theme: pages-themes/primer
 
 github:
   private: false
