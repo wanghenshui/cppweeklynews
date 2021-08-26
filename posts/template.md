@@ -3,6 +3,8 @@ layout: post
 title:  第N期
 ---
 
+# C++ 动态新闻推送 第N期
+
 `TODO fix title then remove this line`
 
 `TODO add to readme then remove this line`
