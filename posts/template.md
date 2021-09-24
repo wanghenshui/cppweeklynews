@@ -9,7 +9,7 @@ title:  第N期
 
 `TODO add to readme then remove this line`
 
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态。
+从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态
 
 `TODO fix meetingcpp blogroll link`
 
@@ -25,7 +25,7 @@ title:  第N期
 
 ###  编译器信息最新动态推荐关注hellogcc公众号
 
-[本周周报github直达](https://github.com/hellogcc/osdt-weekly/)
+[OSDT Weekly 2021-09-22 第116期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-09-22.md)
 
 `TODO fix link then remove this line`
 
