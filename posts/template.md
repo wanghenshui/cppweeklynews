@@ -25,7 +25,7 @@ title:  第N期
 
 ###  编译器信息最新动态推荐关注hellogcc公众号
 
-[OSDT Weekly 2021-09-22 第116期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-09-22.md)
+[OSDT Weekly 2021-11-10 第123期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-11-10.md)
 
 `TODO fix link then remove this line`
 
