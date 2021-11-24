@@ -13,8 +13,6 @@ title:  第N期
 
 `TODO fix meetingcpp blogroll link`
 
-每周更新
-
 [周刊项目地址](https://github.com/wanghenshui/cppweeklynews)｜[在线地址](https://wanghenshui.github.io/cppweeklynews/) ｜[知乎专栏](https://www.zhihu.com/column/jieyaren) |[腾讯云+社区](https://cloud.tencent.com/developer/column/92884)
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
@@ -23,7 +21,7 @@ title:  第N期
 
 ## 资讯
 
-[编译器信息最新动态推荐关注hellogcc公众号 本周更新 Weekly 2021-11-10 第124期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-11-17.md)https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-11-10.md)
+[编译器信息最新动态推荐关注hellogcc公众号 本周更新 Weekly 2021-11-24 第125期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-11-24.md)
 
 `TODO fix link then remove this line`
 
@@ -44,6 +42,8 @@ title:  第N期
 ## 项目
 
 
+
+## 工作招聘
 
 ---
 
