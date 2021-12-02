@@ -17,14 +17,9 @@ github:
     path: "/"
   repository_url: "https://github.com/wanghenshui/cppweeklynews"
   
-plugins:
-  - jekyll-feed
-feed:
-  path: feed.xml
-
 name: C++ 动态新闻推送
 description: 每周更新c++相关信息
 url: https://wanghenshui.github.io/cppweeklynews
-feed_items: 10
-feed_update_period: daily
-feed_update_frequency: 1
+
+plugins:
+  - jekyll-feed
