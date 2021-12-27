@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  第N期
+title:  第NNN期
 ---
 
-# C++ 动态新闻推送 第N期
+# C++ 动态新闻推送 第NNN期
 
 `TODO fix title then remove this line`
-
-`TODO add to readme then remove this line`
 
 从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态
 
@@ -51,6 +49,4 @@ title:  第N期
 
 看到这里或许你有建议或者疑问或者指出错误，请留言评论! 多谢!  你的评论非常重要！也可以帮忙点赞收藏转发！多谢支持！
 
-`TODO fix link then remove this line`
-
-[本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/001.html)
+[本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/0NNN.html)
