@@ -5,7 +5,7 @@ title:  第NNN期
 
 # C++ 动态新闻推送 第NNN期
 
-`TODO fix title then remove this line`
+`TODO add README then remove this line`
 
 从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态
 
@@ -21,7 +21,7 @@ title:  第NNN期
 
 标准委员会动态/一些比较出名的项目release/ide/编译器信息放在这里
 
-[编译器信息最新动态推荐关注hellogcc公众号 本周更新 Weekly 2021-11-24 第125期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly/2021-11-24.md)
+[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2022-01-05 第131期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2022/2022-01-05.md)
 
 `TODO fix link then remove this line`
 
@@ -39,7 +39,12 @@ title:  第NNN期
 
 
 
-## 项目
+## 开源项目需要人手
+
+- [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群128705139和作者对线
+- [pika](https://github.com/OpenAtomFoundation/pika) 一个nosql 存储， redis over rocksdb，非常需要人贡献代码胖友们， 感兴趣的欢迎加群294254078前来对线
+
+## 新项目介绍
 
 
 
