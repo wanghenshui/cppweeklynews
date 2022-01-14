@@ -19,7 +19,7 @@ title:  第NNN期
 
 ## 资讯
 
-标准委员会动态/一些比较出名的项目release/ide/编译器信息放在这里
+标准委员会动态/ide/编译器信息放在这里
 
 [编译器信息最新动态推荐关注hellogcc公众号 本周更新 2022-01-05 第131期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2022/2022-01-05.md)
 
@@ -44,7 +44,7 @@ title:  第NNN期
 - [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群128705139和作者对线
 - [pika](https://github.com/OpenAtomFoundation/pika) 一个nosql 存储， redis over rocksdb，非常需要人贡献代码胖友们， 感兴趣的欢迎加群294254078前来对线
 
-## 新项目介绍
+## 新项目介绍/版本更新
 
 
 
