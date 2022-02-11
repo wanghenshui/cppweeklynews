@@ -43,7 +43,7 @@ title:  第NNN期
 
 ## 开源项目需要人手
 
-- [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群128705139和作者对线
+- [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群384042845和作者对线
 - [pika](https://github.com/OpenAtomFoundation/pika) 一个nosql 存储， redis over rocksdb，非常需要人贡献代码胖友们， 感兴趣的欢迎加群294254078前来对线
 
 ## 新项目介绍/版本更新
