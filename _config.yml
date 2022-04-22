@@ -7,16 +7,6 @@ sass:
   style: :compressed
 baseurl:
 theme: jekyll-theme-primer
-
-github:
-  private: false
-  license:
-    name: Creative Commons Zero v1.0 Universal
-  source:
-    branch: "dev"
-    path: "/"
-  repository_url: "https://github.com/wanghenshui/cppweeklynews"
-  
 name: C++ 动态新闻推送
 description: 每周更新c++相关信息
 url: https://wanghenshui.github.io/cppweeklynews
