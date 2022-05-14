@@ -7,6 +7,7 @@ title:  第NNN期
 
 `TODO add README then remove this line`
 
+
 从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态
 
 `TODO fix meetingcpp blogroll link`
@@ -16,6 +17,8 @@ title:  第NNN期
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
+
+`TODO update date here`
 
 ---
 
