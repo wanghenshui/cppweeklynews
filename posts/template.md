@@ -3,7 +3,7 @@ layout: post
 title:  第NNN期
 ---
 
-# C++ 动态新闻推送 第NNN期
+# C++ 中文周刊 第NNN期
 
 `TODO add README then remove this line`
 
@@ -36,11 +36,27 @@ title:  第NNN期
 
 `TODO fix link then remove this line`
 
+
+
+
+
+
+
+
+
+
+
 ## 视频
 
 - [C++ Weekly ](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
 
 `TODO fix link then remove this line`
+
+
+
+
+
+
 
 
 

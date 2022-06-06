@@ -7,7 +7,7 @@ sass:
   style: :compressed
 baseurl:
 theme: jekyll-theme-primer
-name: C++ 动态新闻推送
+name: C++ 中文周刊
 description: 每周更新c++相关信息
 
 plugins:
