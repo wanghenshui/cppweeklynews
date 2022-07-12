@@ -1,4 +1,4 @@
-# CheckCollectionCompactingC++ 中文周刊
+# C++ 中文周刊
 
 从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态。
 
