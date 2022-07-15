@@ -8,13 +8,12 @@
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
-~~这个项目参考了golangweekly和rust周报~~
+~~别的语言(go/rust)都有周报，咱也整一个~~
 
 ~~尽量~~每周更新
 
 RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
- ~~[xml](https://wanghenshui.github.io/cppweeklynews/feed.xml) [json](https://wanghenshui.github.io/cppweeklynews/feed.xml) page rss暂时不好使~~
 
 ## 2021
 
@@ -32,6 +31,8 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 |                       |                       |                       |                       | [四十五](./posts/045.md) | [四十六](./posts/046.md) | [四十七](./posts/047.md) | [四十八](./posts/048.md) | [四十九](./posts/049.md) | [五十期](./posts/050.md) |
 | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 | [五十一](./posts/051.md) | [五十二](./posts/052.md) | [五十三](./posts/053.md) | [五十四](./posts/054.md) | [五十五](./posts/055.md) | [五十六](./posts/056.md) | [五十七](./posts/057.md) | [五十八](./posts/058.md) | [五十九](./posts/059.md) | [六十期](./posts/060.md) |
-| [六十一](./posts/061.md) | [六十二](./posts/062.md) | [六十三](./posts/063.md) | [六十四](./posts/064.md) | [六十五](./posts/065.md) | [六十六](./posts/066.md) | [六十七](./posts/067.md) | [六十八](./posts/068.md) | [六十九](./posts/069.md) | [七十期](./posts/070.md)                 |
-| [七十一](./posts/071.md) |  |  |  |  |  |  |  |  |                  |
+| [六十一](./posts/061.md) | [六十二](./posts/062.md) | [六十三](./posts/063.md) | [六十四](./posts/064.md) | [六十五](./posts/065.md) | [六十六](./posts/066.md) | [六十七](./posts/067.md) | [六十八](./posts/068.md) | [六十九](./posts/069.md) | [七十期](./posts/070.md) |
+| [七十一](./posts/071.md) ||||||||||
+
+
 ---
