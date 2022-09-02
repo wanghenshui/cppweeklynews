@@ -2,13 +2,11 @@
 layout: post
 title:  第NNN期
 ---
-
 # C++ 中文周刊 第NNN期
 
 `TODO add README then remove this line`
 
-
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态
+从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/[purecpp](http://www.purecpp.cn/)知乎等等摘抄一些c++动态
 
 `TODO fix meetingcpp blogroll link`
 
@@ -20,8 +18,7 @@ title:  第NNN期
 
 `TODO update draft name`
 
-可以贴在下一期草稿里 [草稿链接](https://github.com/wanghenshui/cppweeklynews/blob/draft/posts/NNN.md)
-
+可以贴在下一期草稿里 [草稿链接](https://github.com/wanghenshui/cppweeklynews/pull/NNN.md)
 
 `TODO update date here`
 
@@ -41,29 +38,11 @@ title:  第NNN期
 
 `TODO fix link then remove this line`
 
-
-
-
-
-
-
-
-
-
-
 ## 视频
 
 - [C++ Weekly ](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
 
 `TODO fix link then remove this line`
-
-
-
-
-
-
-
-
 
 ## 开源项目需要人手
 
@@ -71,8 +50,6 @@ title:  第NNN期
 - [pika](https://github.com/OpenAtomFoundation/pika) 一个nosql 存储， redis over rocksdb，非常需要人贡献代码胖友们， 感兴趣的欢迎加群294254078前来对线
 
 ## 新项目介绍/版本更新
-
-
 
 ## 工作招聘
 
