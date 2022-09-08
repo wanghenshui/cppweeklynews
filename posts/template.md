@@ -18,7 +18,7 @@ title:  第NNN期
 
 `TODO update draft name`
 
-可以贴在下一期草稿里 [草稿链接](https://github.com/wanghenshui/cppweeklynews/pull/NNN.md)
+可以贴在下一期草稿里 [草稿链接](https://github.com/wanghenshui/cppweeklynews/pull/NNN)
 
 `TODO update date here`
 
