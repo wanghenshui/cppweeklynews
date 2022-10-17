@@ -6,7 +6,7 @@ title:  第NNN期
 
 `TODO add README then remove this line`
 
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/[purecpp](http://www.purecpp.cn/)知乎/等等摘抄一些c++动态
+从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/[purecpp](http://www.purecpp.cn/)/知乎/等等摘抄一些c++动态
 
 `TODO fix meetingcpp blogroll link`
 
