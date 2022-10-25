@@ -16,7 +16,7 @@ title:  第NNN期
 公众号也有了
 
 
-<img src="../assets/code.png" alt=""  width="25%">
+<img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
