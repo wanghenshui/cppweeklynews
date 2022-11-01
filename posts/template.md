@@ -10,11 +10,9 @@ title:  第NNN期
 
 `TODO fix meetingcpp blogroll link`
 
-[周刊项目地址](https://github.com/wanghenshui/cppweeklynews)｜[在线地址](https://wanghenshui.github.io/cppweeklynews/) ｜[知乎专栏](https://www.zhihu.com/column/jieyaren) |[腾讯云+社区](https://cloud.tencent.com/developer/column/92884)
+[周刊项目地址](https://github.com/wanghenshui/cppweeklynews)
 
-
-公众号也有了
-
+公众号
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
