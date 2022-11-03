@@ -1,8 +1,8 @@
 # C++ 中文周刊
 
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态。
+从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/知乎/公众号等等摘抄一些c++动态。
 
-[周刊项目地址 repo](https://github.com/wanghenshui/cppweeklynews) | [在线地址](https://wanghenshui.github.io/cppweeklynews/)｜[知乎专栏](https://www.zhihu.com/column/jieyaren) |[腾讯云+社区](https://cloud.tencent.com/developer/column/92884)
+[周刊项目地址 repo](https://github.com/wanghenshui/cppweeklynews) | [在线地址](https://wanghenshui.github.io/cppweeklynews/)｜[知乎专栏](https://www.zhihu.com/column/jieyaren) | [腾讯云+社区](https://cloud.tencent.com/developer/column/92884) |
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
@@ -12,7 +12,7 @@
 
 ~~尽量~~每周更新
 
-微信公众号
+微信公众号同步更新
 
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
