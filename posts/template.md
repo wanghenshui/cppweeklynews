@@ -6,15 +6,9 @@ title:  第NNN期
 
 `TODO add README then remove this line`
 
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/[purecpp](http://www.purecpp.cn/)/知乎/等等摘抄一些c++动态
+[周刊项目地址](https://github.com/wanghenshui/cppweeklynews)
 
-`TODO fix meetingcpp blogroll link`
-
-[周刊项目地址](https://github.com/wanghenshui/cppweeklynews)｜[在线地址](https://wanghenshui.github.io/cppweeklynews/) ｜[知乎专栏](https://www.zhihu.com/column/jieyaren) |[腾讯云+社区](https://cloud.tencent.com/developer/column/92884)
-
-
-公众号也有了
-
+公众号
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 

@@ -1,8 +1,8 @@
 # C++ 中文周刊
 
-从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)摘抄一些c++动态。
+从[reddit](https://www.reddit.com/r/cpp/)/[hackernews](https://news.ycombinator.com/)/[lobsters](https://lobste.rs/)/[meetingcpp](https://www.meetingcpp.com/blog/blogroll/)/知乎/公众号等等摘抄一些c++动态。
 
-[周刊项目地址 repo](https://github.com/wanghenshui/cppweeklynews) | [在线地址](https://wanghenshui.github.io/cppweeklynews/)｜[知乎专栏](https://www.zhihu.com/column/jieyaren) |[腾讯云+社区](https://cloud.tencent.com/developer/column/92884)
+[周刊项目地址 repo](https://github.com/wanghenshui/cppweeklynews) | [在线地址](https://wanghenshui.github.io/cppweeklynews/)｜[知乎专栏](https://www.zhihu.com/column/jieyaren) | [腾讯云+社区](https://cloud.tencent.com/developer/column/92884) |
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
@@ -12,7 +12,7 @@
 
 ~~尽量~~每周更新
 
-微信公众号
+微信公众号同步更新
 
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
@@ -39,6 +39,6 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 | [五十一](./posts/051.md) | [五十二](./posts/052.md) | [五十三](./posts/053.md) | [五十四](./posts/054.md) | [五十五](./posts/055.md) | [五十六](./posts/056.md) | [五十七](./posts/057.md) | [五十八](./posts/058.md) | [五十九](./posts/059.md) | [六十期](./posts/060.md) |
 | [六十一](./posts/061.md) | [六十二](./posts/062.md) | [六十三](./posts/063.md) | [六十四](./posts/064.md) | [六十五](./posts/065.md) | [六十六](./posts/066.md) | [六十七](./posts/067.md) | [六十八](./posts/068.md) | [六十九](./posts/069.md) | [七十期](./posts/070.md) |
 | [七十一](./posts/071.md) | [七十二](./posts/072.md) | [七十三](./posts/073.md) | [七十四](./posts/074.md) | [七十五](./posts/075.md) | [七十六](./posts/076.md) | [七十七](./posts/077.md) | [七十八](./posts/078.md) | [七十九](./posts/079.md) | [八十期](./posts/080.md) |
-| [八十一](./posts/081.md) | [八十二](./posts/082.md) | [八十三](./posts/083.md) | [八十四](./posts/084.md) | [八十五](./posts/085.md) |  [八十六](./posts/086.md)                     |                       |                       |                       |                       |
+| [八十一](./posts/081.md) | [八十二](./posts/082.md) | [八十三](./posts/083.md) | [八十四](./posts/084.md) | [八十五](./posts/085.md) |  [八十六](./posts/086.md)                     | [八十七](./posts/087.md)                    |                       |                       |                       |
 
 ---
