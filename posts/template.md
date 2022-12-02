@@ -16,9 +16,8 @@ title:  第NNN期
 
 欢迎投稿，推荐或自荐文章/软件/资源等
 
-`TODO update draft name`
 
-可以贴在下一期草稿里 [草稿链接](https://github.com/wanghenshui/cppweeklynews/pull/NNN)
+请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
 `TODO update date here`
 
