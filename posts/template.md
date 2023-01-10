@@ -14,7 +14,7 @@ title:  第NNN期
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
-RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
+RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 欢迎投稿，推荐或自荐文章/软件/资源等
 
@@ -28,7 +28,7 @@ RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
 标准委员会动态/ide/编译器信息放在这里
 
-[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2022-01-05 第131期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2022/2022-01-05.md)
+[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2023-01-04 第183期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2023/2023-01-04.md)
 
 `TODO fix link then remove this line`
 
