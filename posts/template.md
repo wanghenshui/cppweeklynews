@@ -14,8 +14,9 @@ title:  第NNN期
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
-欢迎投稿，推荐或自荐文章/软件/资源等
+RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
+欢迎投稿，推荐或自荐文章/软件/资源等
 
 请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
@@ -57,3 +58,5 @@ title:  第NNN期
 看到这里或许你有建议或者疑问或者指出错误，请留言评论! 多谢!  你的评论非常重要！也可以帮忙点赞收藏转发！多谢支持！
 
 [本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/0NNN.html)
+
+如果有疑问评论最好在上面链接到评论区里评论，这样方便搜索，微信公众号有点封闭/知乎吞评论
