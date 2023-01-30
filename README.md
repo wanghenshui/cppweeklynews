@@ -8,17 +8,20 @@
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
-~~别的语言(go/rust)都有周报，咱也整一个~~
+每周周五快六更新
 
-~~尽量~~每周更新
+RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
 微信公众号同步更新
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
-公众号开了赞赏，所有赞赏会列到这里
+公众号开了赞赏，所有赞赏会列到这里，按先后排名，在此表示感谢
 
-RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
+- 纯洁的铭铭
+- zhouchongzxc
+
+
 
 ## 2021
 
