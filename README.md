@@ -8,17 +8,22 @@
 
 弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
 
-~~别的语言(go/rust)都有周报，咱也整一个~~
+每周周五快六更新
 
-~~尽量~~每周更新
+RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
+
+我也会投递到LLVM中文社区邮件列表，为那些不想用其他app浏览，只想用邮件的多加一个渠道，订阅方法，发送一个标题为「subscribe」的邮件（正文可以为空）到 hellollvm-request@freelists.org 
 
 微信公众号同步更新
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
-公众号开了赞赏，所有赞赏会列到这里
+公众号开了赞赏，所有赞赏会列到这里，按先后排名，在此表示感谢
 
-RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
+- 纯洁的铭铭
+- zhouchongzxc
+
+
 
 ## 2021
 
@@ -44,7 +49,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 ---
 ## 2023
 
-|                       |                       |                       |                       | [九十五](./posts/095.md) |[九十六](./posts/096.md) | [九十七](./posts/097.md)| [九十八](./posts/098.md) | | |
+|                       |                       |                       |                       | [九十五](./posts/095.md) |[九十六](./posts/096.md) | [九十七](./posts/097.md)| [九十八](./posts/098.md) | [九十九](./posts/099.md) | |
 | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 |  |  |  | |  |  | |  | |  |
 
