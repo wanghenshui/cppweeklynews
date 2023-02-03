@@ -12,6 +12,8 @@
 
 RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
+我也会投递到LLVM中文社区邮件列表，为那些不想用其他app浏览，只想用邮件的多加一个渠道，订阅方法，发送一个标题为「subscribe」的邮件（正文可以为空）到 hellollvm-request@freelists.org 
+
 微信公众号同步更新
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
