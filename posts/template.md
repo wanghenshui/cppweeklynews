@@ -57,6 +57,6 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 看到这里或许你有建议或者疑问或者指出错误，请留言评论! 多谢!  你的评论非常重要！也可以帮忙点赞收藏转发！多谢支持！
 
-[本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/0NNN.html)
+[本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/NNN.html)
 
 如果有疑问评论最好在上面链接到评论区里评论，这样方便搜索，微信公众号有点封闭/知乎吞评论
