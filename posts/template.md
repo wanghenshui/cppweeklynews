@@ -48,6 +48,8 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 - [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群384042845和作者对线
 - [pika](https://github.com/OpenAtomFoundation/pika) 一个nosql 存储， redis over rocksdb，非常需要人贡献代码胖友们， 感兴趣的欢迎加群294254078前来对线
+- [Unilang](https://github.com/linuxdeepin/unilang) deepin的一个通用编程语言，点子有点意思，也缺人，感兴趣的可以github讨论区或者deepin论坛看一看。这里也挂着长期推荐了
+- [paozhu](https://github.com/hggq/paozhu) 国人开发的web库，和drogon联系过没共建而考虑自己的需求基于asio开发。感兴趣的可以体验一下，挂在这里长期推荐了
 
 ## 新项目介绍/版本更新
 
