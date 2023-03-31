@@ -18,12 +18,17 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
-公众号开了赞赏，所有赞赏会列到这里，按先后排名，在此表示感谢
+公众号开了赞赏，所有赞赏会列到这里，按时间先后排名，在此表示感谢
 
 - 纯洁的铭铭
 - zhouchongzxc
-
-
+- A番茄A
+- 杨杰
+- 阿刚
+- MSK
+- 不语
+- ywp
+- 范天泷
 
 ## 2021
 
@@ -51,7 +56,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 |                       |                       |                       |                       | [095](./posts/095.md) |[096](./posts/096.md) | [097](./posts/097.md)| [098](./posts/098.md) | [099](./posts/099.md) | [100](./posts/100.md) |
 | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
-|  [101](./posts/101.md) | [102](./posts/102.md) | [103](./posts/103.md) | [104](./posts/104.md) | [105](./posts/105.md)  | [106](./posts/106.md) | |  | |  |
+|  [101](./posts/101.md) | [102](./posts/102.md) | [103](./posts/103.md) | [104](./posts/104.md) | [105](./posts/105.md)  | [106](./posts/106.md) | [107](./posts/107.md) |  | |  |
 
 
 
