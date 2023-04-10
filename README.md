@@ -29,6 +29,8 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 不语
 - ywp
 - 范天泷
+- 罗盛波
+- 一位不愿透漏姓名的浙江网友
 
 ## 2021
 
