@@ -26,7 +26,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 杨杰
 - 阿刚
 - MSK
-- 不语 x7
+- 不语 x9
 - ywp
 - 范天泷
 - 罗盛波
@@ -35,6 +35,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Fragile
 - GYXL
 - Concept Matrixtang
+- chenbh
 ## 2021
 
 | [001](./posts/001.md) | [002](./posts/002.md) | [003](./posts/003.md) | [004](./posts/004.md) | [005](./posts/005.md) | [006](./posts/006.md) | [007](./posts/007.md) | [008](./posts/008.md) | [009](./posts/009.md) | [010](./posts/010.md) |
@@ -62,7 +63,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 |                       |                       |                       |                       | [095](./posts/095.md) |[096](./posts/096.md) | [097](./posts/097.md)| [098](./posts/098.md) | [099](./posts/099.md) | [100](./posts/100.md) |
 | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 |  [101](./posts/101.md) | [102](./posts/102.md) | [103](./posts/103.md) | [104](./posts/104.md) | [105](./posts/105.md)  | [106](./posts/106.md) | [107](./posts/107.md) | [108](./posts/108.md) | [109](./posts/109.md) | [110](./posts/110.md) |
-|  [111](./posts/111.md) | [112](./posts/112.md) | [113](./posts/113.md) | [114](./posts/114.md)  | [115](./posts/115.md) |  |  |  | |  |
+|  [111](./posts/111.md) | [112](./posts/112.md) | [113](./posts/113.md) | [114](./posts/114.md)  | [115](./posts/115.md) | [116](./posts/116.md) |  |  | |  |
 
 
 
