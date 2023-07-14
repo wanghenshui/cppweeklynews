@@ -34,7 +34,7 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 ## 文章
 
-- [c++ tip of week ](https://github.com/QuantlabFinancial/cpp_tip_of_the_week/)
+- [c++ tip of week ](https://github.com/tip-of-the-week/cpp)
 
 `TODO fix link then remove this line`
 
