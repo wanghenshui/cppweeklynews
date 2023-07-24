@@ -26,16 +26,18 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 杨杰
 - 阿刚
 - MSK
-- 不语 x13
+- 不语 x15
 - ywp
 - 范天泷
 - 罗盛波
-- 一位不愿透漏姓名的浙江网友
+- 一位不愿透漏姓名的浙江网友 x2
 - 张啸
 - Fragile
 - GYXL
 - Concept Matrixtang
 - chenbh
+- 振羽
+
 
 ## 2023
 |  [121](./posts/121.md) | [122](./posts/122.md) | [123](./posts/123.md) | [124](./posts/124.md)  |  |  |  |  |  |  |
