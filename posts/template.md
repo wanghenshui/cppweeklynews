@@ -34,13 +34,13 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 ## 文章
 
-- [c++ tip of week ](https://github.com/tip-of-the-week/cpp)
+#### [c++ tip of week ](https://github.com/tip-of-the-week/cpp)
 
 `TODO fix link then remove this line`
 
 ## 视频
 
-- [C++ Weekly ](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
+#### [C++ Weekly ](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
 
 `TODO fix link then remove this line`
 
