@@ -55,6 +55,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 公众号开了赞赏，所有赞赏会列到这里，按时间先后排名，在此表示感谢
 
+
 - 纯洁的铭铭
 - zhouchongzxc
 - A番茄A
@@ -74,3 +75,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 振羽
 - 汪总
 - Ryan
+- 许琦
