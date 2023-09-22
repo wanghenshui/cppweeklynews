@@ -24,6 +24,9 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 ---
 
+## 奇妙的BUG
+
+TODO
 ## 资讯
 
 标准委员会动态/ide/编译器信息放在这里
