@@ -62,7 +62,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 杨杰
 - 阿刚
 - MSK
-- 不语 x19
+- 不语 x20
 - ywp
 - 范天泷
 - 罗盛波
@@ -80,3 +80,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Yin x2
 - YellyHornby
 - 404
+- Amnesia
