@@ -6,7 +6,9 @@
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
-弄了个qq频道，[手机qq点击进入](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=xzjHQ&from=246610&biz=ka)
+qq群 [手机qq点击进入](https://qm.qq.com/q/6NGizNPyG4)
+
+微信群比较难用且满了，需要加我微信然后我拉进群
 
 每周周五快六更新
 

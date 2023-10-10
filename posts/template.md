@@ -12,7 +12,7 @@ title:  第NNN期
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
-
+qq群 [手机qq点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
 RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
