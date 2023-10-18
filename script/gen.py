@@ -11,7 +11,7 @@ def main():
         return
 
     all = ""
-    with open("./posts/template.md", "r+") as f:
+    with open("./posts/template.md", "r+",errors="ignore") as f:
         data = f.read()
         all = data.replace('NNN', str(val))
 
