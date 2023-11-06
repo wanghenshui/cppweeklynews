@@ -22,6 +22,13 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 `TODO update date here`
 
+
+以后可能要改变一下内容
+
+一周发文章总结，一周发视频总结比如cppcon cppnow之类的，这样两种内容交叉一下
+
+本期发视频/文章
+
 ---
 
 ## 奇妙的BUG
