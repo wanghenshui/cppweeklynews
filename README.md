@@ -6,9 +6,11 @@
 
 欢迎投稿，推荐或自荐文章/软件/资源等，请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
 
-qq群 [手机qq点击进入](https://qm.qq.com/q/6NGizNPyG4)
+[b站偶尔直播/发视频 ](https://space.bilibili.com/2332598)
 
-微信群比较难用且满了，需要加我微信然后我拉进群
+qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
+
+微信群比较难用且满了，需要加我微信然后我拉进群 搜madao_wanghenshui就行
 
 每周周五快六更新
 
