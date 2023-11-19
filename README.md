@@ -90,3 +90,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 黄亮Anthony x3
 - Captain
 - Anien
+- jerry
