@@ -24,7 +24,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 ## 2023
 
-| [131](./posts/131.md) | [132](./posts/132.md)  | [133](./posts/133.md) | [134](./posts/134.md) |  [135](./posts/135.md)   |  [136](./posts/136.md)  |  [137](./posts/137.md) | [138](./posts/138.md) |  [139](./posts/139.md) |                    |
+| [131](./posts/131.md) | [132](./posts/132.md)  | [133](./posts/133.md) | [134](./posts/134.md) |  [135](./posts/135.md)   |  [136](./posts/136.md)  |  [137](./posts/137.md) | [138](./posts/138.md) |  [139](./posts/139.md) | [140](./posts/140.md)                   |
 | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
 | [121](./posts/121.md) | [122](./posts/122.md) | [123](./posts/123.md) | [124](./posts/124.md) |    [125](./posts/125.md) |   [126](./posts/126.md)                 |    [127](./posts/127.md)                |   [128](./posts/128.md)                 |   [129](./posts/129.md)                 |       [130](./posts/130.md)             |
 | [111](./posts/111.md) | [112](./posts/112.md) | [113](./posts/113.md) | [114](./posts/114.md) | [115](./posts/115.md) | [116](./posts/116.md) | [117](./posts/117.md) | [118](./posts/118.md) | [119](./posts/119.md) | [120](./posts/120.md) |
@@ -66,7 +66,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 杨杰
 - 阿刚
 - MSK
-- 不语 x23
+- 不语 x24
 - ywp
 - 范天泷
 - 罗盛波
@@ -82,7 +82,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 许琦
 - 高博
 - Yin x2
-- YellyHornby x2
+- YellyHornby x3
 - 404
 - Amnesia x2
 - fengyiee木马
@@ -91,3 +91,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Captain
 - Anien
 - jerry
+- HNY
