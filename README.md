@@ -87,7 +87,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Amnesia x2
 - fengyiee木马
 - 陈青松
-- 黄亮Anthony x3
+- 黄亮Anthony x4
 - Captain
 - Anien
 - jerry
