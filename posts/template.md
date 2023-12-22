@@ -18,7 +18,7 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 欢迎投稿，推荐或自荐文章/软件/资源等
 
-请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues) 评论区留言
+请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)   或评论区留言
 
 `TODO update date here`
 
