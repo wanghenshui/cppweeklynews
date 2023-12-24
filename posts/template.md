@@ -12,28 +12,18 @@ title:  第NNN期
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
-qq群 [手机qq点击进入](https://qm.qq.com/q/6NGizNPyG4)
+qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
 RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 欢迎投稿，推荐或自荐文章/软件/资源等
 
-请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)
+请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)   或评论区留言
 
 `TODO update date here`
 
-
-以后可能要改变一下内容
-
-一周发文章总结，一周发视频总结比如cppcon cppnow之类的，这样两种内容交叉一下
-
-本期发视频/文章
-
 ---
 
-## 奇妙的BUG
-
-TODO
 ## 资讯
 
 标准委员会动态/ide/编译器信息放在这里
@@ -54,20 +44,19 @@ TODO
 
 `TODO fix link then remove this line`
 
-## 开源项目需要人手
+## 开源项目
 
 - [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群753302367和作者对线
 - [Unilang](https://github.com/linuxdeepin/unilang) deepin的一个通用编程语言，点子有点意思，也缺人，感兴趣的可以github讨论区或者deepin论坛看一看。这里也挂着长期推荐了
 - [gcc-mcf](https://gcc-mcf.lhmouse.com/) 懂的都懂
 
-
 ## 新项目介绍/版本更新
 
 ## 工作招聘
 
+## 互动环节
+
 ---
-
-
 
 [本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/NNN.html)
 
