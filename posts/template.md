@@ -20,7 +20,11 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)   或评论区留言
 
+本期文章由 赞助老爷 赞助
+
 `TODO update date here`
+
+`TODO replate code with carbon https://carbon.now.sh/`
 
 ---
 
