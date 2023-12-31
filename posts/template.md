@@ -20,7 +20,11 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)   或评论区留言
 
+本期文章由 赞助老爷 赞助
+
 `TODO update date here`
+
+`TODO replate code with carbon https://carbon.now.sh/`
 
 ---
 
@@ -28,7 +32,7 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 标准委员会动态/ide/编译器信息放在这里
 
-[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2023-01-04 第183期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2023/2023-01-04.md)
+[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2024-01-04 第235期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2023/2023-01-04.md)
 
 `TODO fix link then remove this line`
 
