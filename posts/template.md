@@ -26,6 +26,9 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 `TODO replate code with carbon https://carbon.now.sh/`
 
+`TODO https://discu.eu/weekly/candcpp/2024/01/`
+
+`TODO https://www.meetingcpp.com/blog/blogroll/`
 ---
 
 ## 资讯
@@ -48,13 +51,23 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 `TODO fix link then remove this line`
 
-## 开源项目
+## 开源项目介绍
 
 - [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群753302367和作者对线
 - [Unilang](https://github.com/linuxdeepin/unilang) deepin的一个通用编程语言，点子有点意思，也缺人，感兴趣的可以github讨论区或者deepin论坛看一看。这里也挂着长期推荐了
 - [gcc-mcf](https://gcc-mcf.lhmouse.com/) 懂的都懂
 
-## 新项目介绍/版本更新
+## 热门库最近更新了什么
+
+seastar
+
+folly
+
+fmt
+
+brpc？
+
+async_simple
 
 ## 工作招聘
 
@@ -63,5 +76,3 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 ---
 
 [本文永久链接](https://wanghenshui.github.io/cppweeklynews/posts/NNN.html)
-
-如果有疑问评论最好在上面链接到评论区里评论，这样方便搜索，微信公众号有点封闭/知乎吞评论
