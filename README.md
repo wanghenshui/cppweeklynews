@@ -99,3 +99,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Anien
 - jerry
 - HNY x3
+- CHENL
