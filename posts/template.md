@@ -2,7 +2,7 @@
 layout: post
 title:  第NNN期
 ---
-# C++ 中文周刊 第NNN期
+# C++ 中文周刊 2024-XX-XX 第NNN期
 
 `TODO add README then remove this line`
 
@@ -22,7 +22,6 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 本期文章由 赞助老爷 赞助
 
-`TODO update date here`
 
 `TODO replate code with carbon https://carbon.now.sh/`
 
