@@ -39,9 +39,6 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 ## 文章
 
-#### [c++ tip of week ](https://github.com/tip-of-the-week/cpp)
-
-`TODO fix link then remove this line`
 
 ## 视频
 
@@ -53,7 +50,6 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
 - [asteria](https://github.com/lhmouse/asteria) 一个脚本语言，可嵌入，长期找人，希望胖友们帮帮忙，也可以加群753302367和作者对线
 - [Unilang](https://github.com/linuxdeepin/unilang) deepin的一个通用编程语言，点子有点意思，也缺人，感兴趣的可以github讨论区或者deepin论坛看一看。这里也挂着长期推荐了
-- [gcc-mcf](https://gcc-mcf.lhmouse.com/) 懂的都懂
 
 ## 热门库最近更新了什么
 

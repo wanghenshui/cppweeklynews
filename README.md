@@ -101,3 +101,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - HNY x3
 - CHENL
 - 沧海
+- 彩虹蛇皮虾
