@@ -24,7 +24,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 ## 2024
 
-|  |  |  |  | [145](./posts/145.md) | [146](./posts/146.md) | [147](./posts/147.md) | [148](./posts/148.md) | [149](./posts/149.md) |  |
+|  |  |  |  | [145](./posts/145.md) | [146](./posts/146.md) | [147](./posts/147.md) | [148](./posts/148.md) | [149](./posts/149.md) | [150](./posts/150.md) |
 | - | - | - | - | ------------------ | ------------------ | ------------------ | ------------------ | ----------------- | - |
 |  |  |  |  |                    |                    |                    |                    |                   |  |
 
@@ -91,10 +91,10 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Yin x2
 - YellyHornby x3
 - 404
-- Amnesia x4
+- Amnesia x5
 - fengyiee木马
 - 陈青松
-- 黄亮Anthony x12
+- 黄亮Anthony x13
 - Captain
 - Anien
 - jerry
