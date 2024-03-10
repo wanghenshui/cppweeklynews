@@ -24,9 +24,9 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 ## 2024
 
-|  |  |  |  | [145](./posts/145.md) | [146](./posts/146.md) | [147](./posts/147.md) | [148](./posts/148.md) | [149](./posts/149.md) | [150](./posts/150.md) |
-| - | - | - | - | ------------------ | ------------------ | ------------------ | ------------------ | ----------------- | - |
-|  |  |  |  |                    |                    |                    |                    |                   |  |
+| [151](./posts/151.md) |  |  |  |                    |                    |                    |                    |                    |                    |
+| ------------------ | - | - | - | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+|                    |  |  |  | [145](./posts/145.md) | [146](./posts/146.md) | [147](./posts/147.md) | [148](./posts/148.md) | [149](./posts/149.md) | [150](./posts/150.md) |
 
 ---
 
@@ -73,7 +73,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 杨杰
 - 阿刚
 - MSK
-- 不语 x28
+- 不语 x29
 - ywp
 - 范天泷
 - 罗盛波
@@ -98,9 +98,10 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Captain
 - Anien
 - jerry
-- HNY x6
+- HNY x8
 - CHENL
 - 沧海
 - 彩虹蛇皮虾
 - Tudou
 - kenshin
+- {}
