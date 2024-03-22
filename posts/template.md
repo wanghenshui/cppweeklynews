@@ -16,9 +16,7 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
 RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 
-欢迎投稿，推荐或自荐文章/软件/资源等
-
-请[提交 issue](https://github.com/wanghenshui/cppweeklynews/issues)   或评论区留言
+欢迎投稿，推荐或自荐文章/软件/资源等，评论区留言
 
 本期文章由 赞助老爷 赞助
 
@@ -38,7 +36,6 @@ RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
 `TODO fix link then remove this line`
 
 ## 文章
-
 
 ## 视频
 
