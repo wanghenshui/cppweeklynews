@@ -98,10 +98,11 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Captain
 - Anien
 - jerry
-- HNY x9s
+- HNY x10
 - CHENL
 - 沧海
 - 彩虹蛇皮虾
 - Tudou
 - kenshin
 - {}
+- 啃萝卜
