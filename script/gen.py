@@ -15,6 +15,10 @@ def main():
         data = f.read()
         all = data.replace('NNN', str(val))
 
+    with open("./posts/template.md", "r+",errors="ignore") as f:
+        data = f.read()
+        all = data.replace('MMM', str(val-1))
+
     filename_prefix = "./posts/"
 
     filename = filename_prefix + str(val) + ".md"
