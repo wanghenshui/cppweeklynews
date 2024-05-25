@@ -1,6 +1,6 @@
 # coding=utf-8
 #!/usr/bin/python3
-
+import time
 def main():
     title = input("新文章文档序号:")
     val = 0
@@ -14,10 +14,8 @@ def main():
     with open("./posts/template.md", "r+",errors="ignore") as f:
         data = f.read()
         all = data.replace('NNN', str(val))
-
-    with open("./posts/template.md", "r+",errors="ignore") as f:
-        data = f.read()
-        all = data.replace('MMM', str(val-1))
+        all = all.replace('MMM', str(val-1))
+        all = all.replace("%Y-%m-%d", time.strftime("%Y-%m-%d"))
 
     filename_prefix = "./posts/"
 
