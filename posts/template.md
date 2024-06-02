@@ -12,6 +12,8 @@ title:  第NNN期
 
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
+点击「查看原文」跳转到 GitHub 上对应文件，链接就可以点击了
+
 qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
 RSS https://github.com/wanghenshui/cppweeklynews/releases.atom
