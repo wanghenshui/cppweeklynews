@@ -16,15 +16,13 @@ title:  第NNN期
 
 qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
-[RSS](https://github.com/wanghenshui/cppweeklynews/releases.atom) 
+[RSS](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
 欢迎投稿，推荐或自荐文章/软件/资源等，评论区留言
 
 本期文章由 赞助老爷 赞助
 
 `TODO update sponsor`
-
-`TODO replate code with carbon https://carbon.now.sh/`
 
 `TODO https://discu.eu/weekly/candcpp/2024/01/`
 
