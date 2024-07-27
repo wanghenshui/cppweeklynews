@@ -92,14 +92,14 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Yin x2
 - YellyHornby x3
 - 404 x2
-- Amnesia x5
+- Amnesia x6
 - fengyiee木马
 - 陈青松
 - 黄亮Anthony x13
 - Captain
 - Anien
 - jerry
-- HNY x20
+- HNY x21
 - CHENL
 - 沧海
 - 彩虹蛇皮虾
@@ -111,3 +111,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 岚岚路
 - LH_mouse x 666
 - 终盛 x2
+- Damon
