@@ -15,6 +15,7 @@ def main():
         data = f.read()
         all = data.replace('NNN', str(val))
         all = all.replace('MMM', str(val-1))
+        all = all.replace('OOO', str(val+1))
         all = all.replace("%Y-%m-%d", time.strftime("%Y-%m-%d"))
 
     filename_prefix = "./posts/"
