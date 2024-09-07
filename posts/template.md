@@ -20,7 +20,7 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
 
 欢迎投稿，推荐或自荐文章/软件/资源等，评论区留言
 
-本期文章由 赞助老爷 赞助
+本期文章由 赞助老爷 赞助 在此表示感谢
 
 `TODO update sponsor`
 

@@ -2,7 +2,7 @@
 layout: post
 title:  title
 ---
-# NNN title
+# %Y-%m-%d title
 
 `TODO add README then remove this line`
 

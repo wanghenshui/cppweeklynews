@@ -34,7 +34,8 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 ### 特约供稿
 
--
+- [assume](./spec/2024-09-08-assume.md) 感谢@mapleFU mwish
+
 
 ---
 
@@ -99,14 +100,14 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - Yin x2
 - YellyHornby x3
 - 404 x2
-- Amnesia x6
+- Amnesia x7
 - fengyiee木马
 - 陈青松
 - 黄亮Anthony x13
 - Captain
 - Anien
 - jerry
-- HNY x23
+- HNY x24
 - CHENL
 - 沧海
 - 彩虹蛇皮虾

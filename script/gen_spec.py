@@ -8,12 +8,11 @@ def main():
     all = ""
     with open("./spec/template.md", "r+",errors="ignore") as f:
         data = f.read()
-        all = data.replace('NNN', str(val))
-        all = all.replace("%Y-%m-%d", time.strftime("%Y-%m-%d"))
+        all = data.replace("%Y-%m-%d", time.strftime("%Y-%m-%d"))
 
     filename_prefix = "./spec/"
 
-    filename = "%Y-%m-%d-", time.strftime("%Y-%m-%d")+filename_prefix + ".md"
+    filename = filename_prefix + time.strftime("%Y-%m-%d") + '-'+ title + ".md"
 
     with open(filename, "w") as f:
         f.write(all)
