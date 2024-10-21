@@ -14,7 +14,7 @@ title:  第NNN期
 
 点击「查看原文」跳转到 GitHub 上对应文件，链接就可以点击了
 
-qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4)
+qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这俩 729240657 866408334
 
 [RSS](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
