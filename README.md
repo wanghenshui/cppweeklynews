@@ -24,6 +24,10 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 另外还有猪脚饭收买的特约供稿，有供稿会单独列出
 
+
+### [c++周刊常见问题收集，看之前先看这个](./spec/2024-10-24-start.md)
+
+
 ## 2024
 
 | [161](./posts/161.md) |[162](./posts/162.md) | [163](./posts/163.md) |[164](./posts/164.md) |  [165](./posts/165.md)|  [166](./posts/166.md)| [167](./posts/167.md) | [168](./posts/168.md) | [169](./posts/169.md) | |
