@@ -201,6 +201,8 @@ iterator可以随便抄一个容器的，重点是tag dispatch
 
 移动语义可以写一本书，打个比方value左值是一个盒子，我可以通过move告诉编译器把盒子里的东西搬走
 
+有时间的话可以看一下这篇：[C++的右值引用、移动和值类别系统，你所需要的一切](https://zclll.com/index.php/cpp/value_category.html)
+
 ## 各种编译失败/库的链接问题（为什么链接失败
 
 这种只能搜索引擎搜，我也总结了个常见报错整理 https://wanghenshui.github.io/2019/11/01/compile.html
@@ -225,6 +227,7 @@ boost::spirit 这个是最经典的也是比较难懂的，foothan他有个lexy
 fbstring也有长短串优化， 甚至还有umbrastring这种prefix优化字符串
 
 回到问题，看需求，c++是灵活的，面对不同需求解法多花样多，就是图这个花样我才学c++
+
 
 ## struct vs tuple?
 
@@ -272,3 +275,4 @@ fbstring也有长短串优化， 甚至还有umbrastring这种prefix优化字符
 光看不写是不行的，纸上得来终觉浅
 
 这里有一篇详细的介绍，不是我写的，但是很不错，给新人参考 https://zclll.com/index.php/cpp/get_started_cpp.html
+
