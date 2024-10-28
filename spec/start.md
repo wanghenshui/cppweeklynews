@@ -19,7 +19,7 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这俩 729240657 8
 
 这里把问题总结列举出来
 
-本文长期更新，按照更新顺序排列，目前更新时间为 2024-10-25
+本文长期更新，按照更新顺序排列，目前更新时间为 2024-10-28
 
 ---
 
@@ -181,7 +181,7 @@ c++17 编译器是什么版本你就学什么版本，编译器目前默认17
 
 c++ 没有包管理器的问题
 
-如果你是cmake，用cpm, 如果没有选择，可以尝试xmake
+如果你是cmake，用cpm, 如果没有选择，可以尝试xmake，公司一般来说会用bazel/blade 后面三个原理类似
 
 ## 什么是右值，右值引用变量为什么不是右值/类型和值类别/右值引用 所有权
 
@@ -225,3 +225,50 @@ boost::spirit 这个是最经典的也是比较难懂的，foothan他有个lexy
 fbstring也有长短串优化， 甚至还有umbrastring这种prefix优化字符串
 
 回到问题，看需求，c++是灵活的，面对不同需求解法多花样多，就是图这个花样我才学c++
+
+## struct vs tuple?
+
+永远优先struct，tuple只适合转发，没有名字信息是致命的
+
+## 如何调试模版错误？
+
+只能复制编译报错拿出来二分，搜代码文件名字，瞪眼法，没有好的办法。如果ICE就放弃吧
+
+## ICE/NTTP/....是什么
+
+关于这些缩写名次 https://quuxplusone.github.io/blog/2019/08/02/the-tough-guide-to-cpp-acronyms/
+
+这里有个总结。其实看一遍大概就明白了
+
+## 有没有c++推荐书单/怎么学c++
+
+书单 Stackoverflow上有个经典书单 https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
+
+说实话，你不太可能挨个看完，这里列一下
+
+- c++ primer 第五版，是举例写代码，书很厚习题很多，我曾就有过，没看完送人了。作者也去世了，永远停在c++11
+- Programming: Principles and Practice Using C++ 这本是BS老头的书，写的例子非常多，这个值得看。跟着写
+- A Tour of C++ BS发牢骚，没啥意义不用看
+-  Accelerated C++ 老东西，不用看
+-  Effective C++/More Effective C++/Effective STL 这里面的经典条目，你直接看一下标题看一下代码就行了，搜一下到处都是，属于常识性的东西
+-  Effective Modern C++ 讲c++14的，也没啥新东西，可以看看条目和代码
+-  Exceptional C++/More Exceptional C++/Exceptional C++ Style 异常安全，如果你不知道，你可以跳过
+-  C++ Coding Standards 什么101条经验，和前面的effective重复，看不看都行
+-  C++ Templates: The Complete Guide 库作者可以看，其他人可以跳过
+-  C++ 17/20 - The Complete Guide 不用看。手册
+-  C++ in Action 不用看
+-  Functional Programming in C++ 这个叫c++函数式编程，这个方向就这么一本书，鉴定为看一乐，没用
+-  Modern C++ Design 现代C++程序设计，这本是AA的天书，讲策略模版的，代码已经很老了，不如直接看Folly文档学的快
+-  C++ Template Metaprogramming 纯纯的糟粕，看一眼后悔五天
+-  C++ Concurrency In Action c++并发实战 这本说实话有点入门，看一乐，讲的atomic和线程池之类的玩意，帮你理解语义，但你看了也看不太明白，很晦涩
+-  Advanced C++ Metaprogramming 这本我就看了十几页就看不动了，天书
+-  Large Scale C++ volume I, Process and architecture  大规模c++程序设计，这本书还是挺不错的。推荐一看
+-  C++ Software Design 这本我还没看完，看完发表意见
+  
+还有一些老书什么深入理解对象模型stl源码剖析之类的 ，我只能说开卷有益，但没事你别开这几卷
+
+至于怎么学c++，永远是围绕着需求来的，你要先有一个目标，需求，做什么，然后围绕这个目标努力，然后围绕这个目标迭代你的代码
+
+光看不写是不行的，纸上得来终觉浅
+
+这里有一篇详细的介绍，不是我写的，但是很不错，给新人参考 https://zclll.com/index.php/cpp/get_started_cpp.html
