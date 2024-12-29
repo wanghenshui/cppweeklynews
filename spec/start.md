@@ -25,6 +25,8 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这俩 729240657 8
 
 - 啃萝卜
 - 夏虫
+- 祥子
+- 天失败
 
 ---
 
@@ -133,6 +135,8 @@ c++如果不涉及跨语言边界，内部可以搞二进制自解析，比如st
 ui qt ？不太了解
 
 json github搜星最多的那个，如果不是性能要求，不要用rapid-json，他既不rapid，也不好用，接口难用的一
+
+性能考虑可以simdjson yyjson glaze 字节那个soniccpp也行
 
 这个后面慢慢补充吧 标记个TODO
 
@@ -334,3 +338,13 @@ clang-tidy很多是最佳实践，做不到，能控制住影响，也可以忽�
 ## optional<T*> 是好的设计吗
 
 非常不好
+
+## 为什么vector bool不建议使用
+
+vector bool不是vector 这个比较违反直觉。原来在stl实现是不叫vector bool
+
+做了proxy帮你封装pack了数据，但是却违反了vector的直觉使用，非常糟糕的设计
+
+非要用，使用deque bool vector int都可以。
+
+在乎字节，用bitmap/bitset，甚至roaringbitmap
