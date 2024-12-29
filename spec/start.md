@@ -9,7 +9,7 @@
 <img src="https://wanghenshui.github.io/cppweeklynews/assets/code.png" alt=""  width="30%">
 
 
-qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这俩 729240657 866408334
+qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这个 729240657
 
 [RSS](https://github.com/wanghenshui/cppweeklynews/releases.atom)
 
