@@ -138,5 +138,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - LH_mouse x 1332
 - 终盛 x2
 - Damon
-- whyqaq
+- whyqaq x2
 - 夏虫
+- 祥子
+- 天失败
