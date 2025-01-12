@@ -24,7 +24,7 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这个 729240657
 
 `TODO update sponsor`
 
-`TODO https://discu.eu/weekly/candcpp/2024/01/`
+`TODO https://discu.eu/weekly/candcpp/2025/01/`
 
 `TODO https://www.meetingcpp.com/blog/blogroll/`
 ---
@@ -33,7 +33,8 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这个 729240657
 
 标准委员会动态/ide/编译器信息放在这里
 
-[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2024-01-04 第235期](https://github.com/hellogcc/osdt-weekly/blob/master/weekly-2023/2023-01-04.md)
+[编译器信息最新动态推荐关注hellogcc公众号 本周更新 2025-01-08 第288期](https://mp.weixin.qq.com/s/jMaR7QyCD40uCAKJSyLw6A)
+
 
 `TODO fix link then remove this line`
 
