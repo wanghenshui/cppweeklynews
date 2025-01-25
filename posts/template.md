@@ -35,8 +35,8 @@ qq群 [点击进入](https://qm.qq.com/q/6NGizNPyG4) 满了加这个 729240657
 
 [编译器信息最新动态推荐关注hellogcc公众号 本周更新 2025-01-08 第288期](https://mp.weixin.qq.com/s/jMaR7QyCD40uCAKJSyLw6A)
 
+[性能周刊](https://mp.weixin.qq.com/s/rkoBXmzhrbhvN4AEmBHS7w)
 
-`TODO fix link then remove this line`
 
 ## 文章
 
