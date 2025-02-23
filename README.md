@@ -35,7 +35,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 ## 2025
 
 
-| [175](./posts/175.md) | [176](./posts/176.md) | [177](./posts/177.md) | [178](./posts/178.md) |  |  |  |  |  |  |
+| [175](./posts/175.md) | [176](./posts/176.md) | [177](./posts/177.md) | [178](./posts/178.md) |[179](./posts/179.md)  |  |  |  |  |  |
 | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
 |               |                    |                    |                    |  |  |  |  |  |  |
 
@@ -115,7 +115,7 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 许琦
 - 高博
 - Yin x2
-- YellyHornby x3
+- YellyHornby x4
 - 404 x2
 - Amnesia x8
 - fengyiee木马
@@ -143,3 +143,4 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 - 天失败
 - F.v.S
 - Jared
+- QlQl
