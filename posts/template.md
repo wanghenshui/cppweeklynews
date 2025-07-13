@@ -24,7 +24,6 @@ qq群 753792291 答疑在这里
 
 `TODO update sponsor`
 
-`TODO https://discu.eu/weekly/candcpp/2025/01/`
 
 `TODO https://www.meetingcpp.com/blog/blogroll/`
 ---
