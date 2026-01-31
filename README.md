@@ -26,6 +26,19 @@ RSS使用仓库的release RSS [链接](https://github.com/wanghenshui/cppweeklyn
 
 ### [c++周刊常见问题收集，看之前先看这个](./spec/start.md)
 
+## MCP 服务器
+
+现在可以通过 **MCP (Model Context Protocol)** 服务器与AI助手（如Claude）交互访问周刊内容！
+
+查看 [mcp-server/README.md](./mcp-server/README.md) 了解如何配置和使用。
+
+主要功能：
+- 列出所有周刊
+- 获取指定期数的完整内容
+- 搜索关键词
+- 获取周刊摘要
+- 获取最新一期
+
 
 
 ## 周末圆桌

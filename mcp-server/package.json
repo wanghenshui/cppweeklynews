@@ -1,0 +1,23 @@
+{
+  "name": "cpp-weekly-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for C++ Chinese Weekly summaries",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "cpp-weekly-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "cpp",
+    "weekly"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cpp-weekly": {
+      "command": "node",
+      "args": ["/Users/wqw/wqw/weekly/mcp-server/index.js"]
+    }
+  }
+}
