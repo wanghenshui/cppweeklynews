@@ -5,6 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
+  InitializeRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import fs from "fs/promises";
 import path from "path";
@@ -153,6 +154,20 @@ const server = new Server(
     },
   }
 );
+
+// 处理初始化请求 - MCP协议握手
+server.setRequestHandler(InitializeRequestSchema, async (request) => {
+  return {
+    protocolVersion: "2024-11-05",
+    capabilities: {
+      tools: {},
+    },
+    serverInfo: {
+      name: "cpp-weekly-mcp-server",
+      version: "1.0.0",
+    },
+  };
+});
 
 // 定义工具列表
 server.setRequestHandler(ListToolsRequestSchema, async () => {

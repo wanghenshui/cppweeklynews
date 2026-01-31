@@ -2,12 +2,12 @@
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import { createMcpExpressApp } from "@modelcontextprotocol/sdk/server/express.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
+  InitializeRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import express from "express";
-import cors from "cors";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -51,19 +51,16 @@ async function getWeeklyContent(issueNumber) {
 
 // 工具函数：提取周刊元数据
 function extractMetadata(content) {
-  const lines = content.split("\n");
   const metadata = {
     title: "",
     sections: [],
   };
 
-  // 提取标题
   const titleMatch = content.match(/# C\+\+ 中文周刊 第(\d+)期/);
   if (titleMatch) {
     metadata.title = `第${titleMatch[1]}期`;
   }
 
-  // 提取各个章节
   const sectionRegex = /^## (.+)$/gm;
   let match;
   while ((match = sectionRegex.exec(content)) !== null) {
@@ -78,18 +75,15 @@ function generateSummary(content) {
   const metadata = extractMetadata(content);
   const lines = content.split("\n").filter((line) => line.trim());
 
-  // 提取前几段非空内容作为简介
   let intro = "";
   let linkCount = 0;
 
-  // 统计链接和资源
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
   const matches = content.match(linkRegex);
   if (matches) {
     linkCount = matches.length;
   }
 
-  // 找到第一段有意义的内容
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (
@@ -126,7 +120,6 @@ async function searchWeeklies(keyword) {
 
       for (let i = 0; i < lines.length; i++) {
         if (lines[i].toLowerCase().includes(keyword.toLowerCase())) {
-          // 获取上下文：前后各1行
           const context = [];
           if (i > 0) context.push(lines[i - 1]);
           context.push(lines[i]);
@@ -137,7 +130,7 @@ async function searchWeeklies(keyword) {
 
       results.push({
         issue: issueNumber,
-        matches: matchingLines.slice(0, 5), // 限制每期最多5个匹配
+        matches: matchingLines.slice(0, 5),
       });
     }
   }
@@ -145,7 +138,7 @@ async function searchWeeklies(keyword) {
   return results;
 }
 
-// 创建MCP服务器实例（全局单例）
+// 创建MCP服务器实例
 function createMCPServer() {
   const server = new Server(
     {
@@ -159,14 +152,28 @@ function createMCPServer() {
     }
   );
 
-  // 定义工具列表 - 使用正确的Schema
+  // 处理初始化请求
+  server.setRequestHandler(InitializeRequestSchema, async (request) => {
+    console.log("Received initialize request from:", request.params.clientInfo?.name);
+    return {
+      protocolVersion: "2024-11-05",
+      capabilities: {
+        tools: {},
+      },
+      serverInfo: {
+        name: "cpp-weekly-mcp-server",
+        version: "1.0.0",
+      },
+    };
+  });
+
+  // 定义工具列表
   server.setRequestHandler(ListToolsRequestSchema, async () => {
     return {
       tools: [
         {
           name: "list_weeklies",
-          description:
-            "列出所有可用的C++中文周刊期数。返回按期数排序的列表。",
+          description: "列出所有可用的C++中文周刊期数。返回按期数排序的列表。",
           inputSchema: {
             type: "object",
             properties: {},
@@ -174,8 +181,7 @@ function createMCPServer() {
         },
         {
           name: "get_weekly",
-          description:
-            "获取指定期数的完整周刊内容。提供期数(如'001', '195')即可获取该期的完整Markdown内容。",
+          description: "获取指定期数的完整周刊内容。提供期数(如'001', '195')即可获取该期的完整Markdown内容。",
           inputSchema: {
             type: "object",
             properties: {
@@ -189,8 +195,7 @@ function createMCPServer() {
         },
         {
           name: "get_weekly_summary",
-          description:
-            "获取指定期数周刊的摘要信息，包括标题、章节列表、简介、链接数量等元数据。",
+          description: "获取指定期数周刊的摘要信息，包括标题、章节列表、简介、链接数量等元数据。",
           inputSchema: {
             type: "object",
             properties: {
@@ -204,8 +209,7 @@ function createMCPServer() {
         },
         {
           name: "get_latest_weekly",
-          description:
-            "获取最新一期周刊的完整内容。自动返回期数最大的周刊。",
+          description: "获取最新一期周刊的完整内容。自动返回期数最大的周刊。",
           inputSchema: {
             type: "object",
             properties: {},
@@ -213,8 +217,7 @@ function createMCPServer() {
         },
         {
           name: "search_weeklies",
-          description:
-            "在所有周刊中搜索包含指定关键词的内容。返回匹配的期数和相关上下文片段。",
+          description: "在所有周刊中搜索包含指定关键词的内容。返回匹配的期数和相关上下文片段。",
           inputSchema: {
             type: "object",
             properties: {
@@ -230,7 +233,7 @@ function createMCPServer() {
     };
   });
 
-  // 处理工具调用 - 使用正确的Schema
+  // 处理工具调用
   server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const { name, arguments: args } = request.params;
 
@@ -336,51 +339,41 @@ function createMCPServer() {
   return server;
 }
 
-// 创建Express应用
-const app = express();
-
-// 启用CORS
-app.use(cors());
-app.use(express.json());
+// 使用SDK提供的Express应用创建器
+const app = createMcpExpressApp({ host: HOST });
 
 // 健康检查端点
 app.get("/health", (req, res) => {
   res.json({ status: "ok", service: "cpp-weekly-mcp-server" });
 });
 
-// SSE端点 - 每个连接创建独立的服务器实例和传输
+// SSE端点 - 每个连接创建独立的服务器实例
 app.get("/sse", async (req, res) => {
   console.log("New SSE connection established");
 
-  // 为每个连接创建独立的MCP服务器实例
   const server = createMCPServer();
+  const transport = new SSEServerTransport("/messages", res);
 
-  // 创建SSE传输
-  const transport = new SSEServerTransport("/message", res);
-
-  // 连接服务器和传输
   await server.connect(transport);
 
-  // 连接关闭时清理
   req.on("close", () => {
     console.log("SSE connection closed");
     server.close();
   });
 });
 
-// POST端点用于接收客户端消息
-app.post("/message", async (req, res) => {
-  console.log("Received message:", req.body);
-  // SSE传输会自动处理这些消息
-  res.status(202).json({ status: "accepted" });
+// POST端点 - 由SDK的express集成自动处理
+app.post("/messages", async (req, res) => {
+  // SDK会处理这些消息
+  res.status(202).send("");
 });
 
 // 启动服务器
-app.listen(PORT, HOST, () => {
+app.listen(PORT, () => {
   console.log(`C++ Weekly MCP HTTP Server running at:`);
   console.log(`  - Health check: http://${HOST}:${PORT}/health`);
   console.log(`  - SSE endpoint: http://${HOST}:${PORT}/sse`);
-  console.log(`  - Message endpoint: http://${HOST}:${PORT}/message`);
+  console.log(`  - Messages endpoint: http://${HOST}:${PORT}/messages`);
   console.log(`\nServer is ready to accept connections.`);
   console.log(`\nTo test: curl http://${HOST}:${PORT}/health`);
 });
