@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "MCP server for C++ Chinese Weekly summaries",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "bin": {
-    "cpp-weekly-mcp": "./index.js"
+    "cpp-weekly-mcp": "./server.js"
   },
   "scripts": {
-    "start": "node index.js",
-    "start:http": "node http-server.js",
-    "start:stdio": "node index.js"
+    "start": "node server.js",
+    "start:http": "MODE=http node server.js",
+    "start:stdio": "MODE=stdio node server.js",
+    "test": "node test-streamable-http.js"
   },
   "keywords": [
     "mcp",

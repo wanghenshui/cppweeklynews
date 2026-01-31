@@ -1,76 +1,68 @@
 #!/usr/bin/env node
 
+/**
+ * C++ Weekly MCP Server - 基于官方SDK的StreamableHTTPServerTransport实现
+ *
+ * 这是使用MCP SDK标准模式的正确实现
+ */
+
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
-import { createMcpExpressApp } from "@modelcontextprotocol/sdk/server/express.js";
+import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
-  InitializeRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
+import http from "node:http";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { randomUUID } from "node:crypto";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 配置
 const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST || "localhost";
+const HOST = process.env.HOST || "0.0.0.0";
 const POSTS_DIR = path.join(__dirname, "..", "posts");
+const MODE = process.env.MODE || "http"; // http 或 stdio
 
-// 工具函数：获取所有周刊文件
+// 工具函数
 async function getAllWeeklies() {
   try {
     const files = await fs.readdir(POSTS_DIR);
-    const mdFiles = files
+    return files
       .filter((f) => f.endsWith(".md") && f !== "template.md")
       .map((f) => f.replace(".md", ""))
-      .sort((a, b) => {
-        const numA = parseInt(a);
-        const numB = parseInt(b);
-        return numA - numB;
-      });
-    return mdFiles;
+      .sort((a, b) => parseInt(a) - parseInt(b));
   } catch (error) {
     throw new Error(`Failed to read posts directory: ${error.message}`);
   }
 }
 
-// 工具函数：读取周刊内容
 async function getWeeklyContent(issueNumber) {
   try {
     const filePath = path.join(POSTS_DIR, `${issueNumber}.md`);
-    const content = await fs.readFile(filePath, "utf-8");
-    return content;
+    return await fs.readFile(filePath, "utf-8");
   } catch (error) {
     throw new Error(`Failed to read issue ${issueNumber}: ${error.message}`);
   }
 }
 
-// 工具函数：提取周刊元数据
 function extractMetadata(content) {
-  const metadata = {
-    title: "",
-    sections: [],
-  };
-
+  const metadata = { title: "", sections: [] };
   const titleMatch = content.match(/# C\+\+ 中文周刊 第(\d+)期/);
-  if (titleMatch) {
-    metadata.title = `第${titleMatch[1]}期`;
-  }
+  if (titleMatch) metadata.title = `第${titleMatch[1]}期`;
 
   const sectionRegex = /^## (.+)$/gm;
   let match;
   while ((match = sectionRegex.exec(content)) !== null) {
     metadata.sections.push(match[1]);
   }
-
   return metadata;
 }
 
-// 工具函数：生成摘要
 function generateSummary(content) {
   const metadata = extractMetadata(content);
   const lines = content.split("\n").filter((line) => line.trim());
@@ -80,12 +72,9 @@ function generateSummary(content) {
 
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
   const matches = content.match(linkRegex);
-  if (matches) {
-    linkCount = matches.length;
-  }
+  if (matches) linkCount = matches.length;
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
+  for (const line of lines) {
     if (
       !line.startsWith("#") &&
       !line.startsWith("---") &&
@@ -101,13 +90,12 @@ function generateSummary(content) {
   return {
     title: metadata.title,
     sections: metadata.sections,
-    intro: intro,
-    linkCount: linkCount,
+    intro,
+    linkCount,
     characterCount: content.length,
   };
 }
 
-// 工具函数：搜索周刊内容
 async function searchWeeklies(keyword) {
   const allWeeklies = await getAllWeeklies();
   const results = [];
@@ -138,7 +126,7 @@ async function searchWeeklies(keyword) {
   return results;
 }
 
-// 创建MCP服务器实例
+// 创建MCP服务器
 function createMCPServer() {
   const server = new Server(
     {
@@ -152,21 +140,6 @@ function createMCPServer() {
     }
   );
 
-  // 处理初始化请求
-  server.setRequestHandler(InitializeRequestSchema, async (request) => {
-    console.log("Received initialize request from:", request.params.clientInfo?.name);
-    return {
-      protocolVersion: "2024-11-05",
-      capabilities: {
-        tools: {},
-      },
-      serverInfo: {
-        name: "cpp-weekly-mcp-server",
-        version: "1.0.0",
-      },
-    };
-  });
-
   // 定义工具列表
   server.setRequestHandler(ListToolsRequestSchema, async () => {
     return {
@@ -174,57 +147,42 @@ function createMCPServer() {
         {
           name: "list_weeklies",
           description: "列出所有可用的C++中文周刊期数。返回按期数排序的列表。",
-          inputSchema: {
-            type: "object",
-            properties: {},
-          },
+          inputSchema: { type: "object", properties: {} },
         },
         {
           name: "get_weekly",
-          description: "获取指定期数的完整周刊内容。提供期数(如'001', '195')即可获取该期的完整Markdown内容。",
+          description: "获取指定期数的完整周刊内容。",
           inputSchema: {
             type: "object",
             properties: {
-              issue: {
-                type: "string",
-                description: "周刊期数，如'001', '195'等",
-              },
+              issue: { type: "string", description: "周刊期数，如'001', '195'等" },
             },
             required: ["issue"],
           },
         },
         {
           name: "get_weekly_summary",
-          description: "获取指定期数周刊的摘要信息，包括标题、章节列表、简介、链接数量等元数据。",
+          description: "获取周刊摘要信息。",
           inputSchema: {
             type: "object",
             properties: {
-              issue: {
-                type: "string",
-                description: "周刊期数，如'001', '195'等",
-              },
+              issue: { type: "string", description: "周刊期数" },
             },
             required: ["issue"],
           },
         },
         {
           name: "get_latest_weekly",
-          description: "获取最新一期周刊的完整内容。自动返回期数最大的周刊。",
-          inputSchema: {
-            type: "object",
-            properties: {},
-          },
+          description: "获取最新一期周刊的完整内容。",
+          inputSchema: { type: "object", properties: {} },
         },
         {
           name: "search_weeklies",
-          description: "在所有周刊中搜索包含指定关键词的内容。返回匹配的期数和相关上下文片段。",
+          description: "搜索周刊内容。",
           inputSchema: {
             type: "object",
             properties: {
-              keyword: {
-                type: "string",
-                description: "要搜索的关键词",
-              },
+              keyword: { type: "string", description: "搜索关键词" },
             },
             required: ["keyword"],
           },
@@ -245,73 +203,38 @@ function createMCPServer() {
             content: [
               {
                 type: "text",
-                text: JSON.stringify(
-                  {
-                    total: weeklies.length,
-                    issues: weeklies,
-                  },
-                  null,
-                  2
-                ),
+                text: JSON.stringify({ total: weeklies.length, issues: weeklies }, null, 2),
               },
             ],
           };
         }
 
         case "get_weekly": {
-          const { issue } = args;
-          const content = await getWeeklyContent(issue);
-          return {
-            content: [
-              {
-                type: "text",
-                text: content,
-              },
-            ],
-          };
+          const content = await getWeeklyContent(args.issue);
+          return { content: [{ type: "text", text: content }] };
         }
 
         case "get_weekly_summary": {
-          const { issue } = args;
-          const content = await getWeeklyContent(issue);
+          const content = await getWeeklyContent(args.issue);
           const summary = generateSummary(content);
-          return {
-            content: [
-              {
-                type: "text",
-                text: JSON.stringify(summary, null, 2),
-              },
-            ],
-          };
+          return { content: [{ type: "text", text: JSON.stringify(summary, null, 2) }] };
         }
 
         case "get_latest_weekly": {
           const weeklies = await getAllWeeklies();
           const latest = weeklies[weeklies.length - 1];
           const content = await getWeeklyContent(latest);
-          return {
-            content: [
-              {
-                type: "text",
-                text: `# 最新一期: ${latest}\n\n${content}`,
-              },
-            ],
-          };
+          return { content: [{ type: "text", text: `# 最新一期: ${latest}\n\n${content}` }] };
         }
 
         case "search_weeklies": {
-          const { keyword } = args;
-          const results = await searchWeeklies(keyword);
+          const results = await searchWeeklies(args.keyword);
           return {
             content: [
               {
                 type: "text",
                 text: JSON.stringify(
-                  {
-                    keyword: keyword,
-                    totalMatches: results.length,
-                    results: results,
-                  },
+                  { keyword: args.keyword, totalMatches: results.length, results },
                   null,
                   2
                 ),
@@ -325,12 +248,7 @@ function createMCPServer() {
       }
     } catch (error) {
       return {
-        content: [
-          {
-            type: "text",
-            text: `Error: ${error.message}`,
-          },
-        ],
+        content: [{ type: "text", text: `Error: ${error.message}` }],
         isError: true,
       };
     }
@@ -339,41 +257,95 @@ function createMCPServer() {
   return server;
 }
 
-// 使用SDK提供的Express应用创建器
-const app = createMcpExpressApp({ host: HOST });
-
-// 健康检查端点
-app.get("/health", (req, res) => {
-  res.json({ status: "ok", service: "cpp-weekly-mcp-server" });
-});
-
-// SSE端点 - 每个连接创建独立的服务器实例
-app.get("/sse", async (req, res) => {
-  console.log("New SSE connection established");
-
+// HTTP模式启动
+async function startHTTPServer() {
   const server = createMCPServer();
-  const transport = new SSEServerTransport("/messages", res);
 
-  await server.connect(transport);
-
-  req.on("close", () => {
-    console.log("SSE connection closed");
-    server.close();
+  // 创建StreamableHTTP传输（有状态模式）
+  const transport = new StreamableHTTPServerTransport({
+    sessionIdGenerator: () => randomUUID(),
   });
-});
 
-// POST端点 - 由SDK的express集成自动处理
-app.post("/messages", async (req, res) => {
-  // SDK会处理这些消息
-  res.status(202).send("");
-});
+  // 连接服务器和传输
+  await server.connect(transport);
+  console.log("✓ MCP Server connected to transport");
 
-// 启动服务器
-app.listen(PORT, () => {
-  console.log(`C++ Weekly MCP HTTP Server running at:`);
-  console.log(`  - Health check: http://${HOST}:${PORT}/health`);
-  console.log(`  - SSE endpoint: http://${HOST}:${PORT}/sse`);
-  console.log(`  - Messages endpoint: http://${HOST}:${PORT}/messages`);
-  console.log(`\nServer is ready to accept connections.`);
-  console.log(`\nTo test: curl http://${HOST}:${PORT}/health`);
+  // 创建HTTP服务器
+  const httpServer = http.createServer(async (req, res) => {
+    const url = new URL(req.url, `http://${req.headers.host}`);
+
+    // 健康检查端点
+    if (url.pathname === "/health" && req.method === "GET") {
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ status: "ok", service: "cpp-weekly-mcp-server" }));
+      return;
+    }
+
+    // MCP端点 - 让传输处理所有MCP请求
+    if (url.pathname === "/mcp") {
+      // 读取请求body（对于POST请求）
+      let body = undefined;
+      if (req.method === "POST") {
+        const chunks = [];
+        for await (const chunk of req) {
+          chunks.push(chunk);
+        }
+        const bodyText = Buffer.concat(chunks).toString();
+        try {
+          body = bodyText ? JSON.parse(bodyText) : undefined;
+        } catch (e) {
+          console.error("Failed to parse body:", e);
+        }
+      }
+
+      // 让传输处理请求
+      await transport.handleRequest(req, res, body);
+      return;
+    }
+
+    // 404
+    res.writeHead(404, { "Content-Type": "text/plain" });
+    res.end("Not Found");
+  });
+
+  httpServer.listen(PORT, HOST, () => {
+    console.log("\n" + "=".repeat(60));
+    console.log("C++ Weekly MCP HTTP Server");
+    console.log("=".repeat(60));
+    console.log(`Server running at: http://${HOST}:${PORT}`);
+    console.log(`  - Health check: http://${HOST}:${PORT}/health`);
+    console.log(`  - MCP endpoint: http://${HOST}:${PORT}/mcp`);
+    console.log("\nConfigure in Claude Desktop:");
+    console.log(`{`);
+    console.log(`  "mcpServers": {`);
+    console.log(`    "cpp-weekly": {`);
+    console.log(`      "url": "http://${HOST}:${PORT}/mcp"`);
+    console.log(`    }`);
+    console.log(`  }`);
+    console.log(`}`);
+    console.log("=".repeat(60));
+    console.log("");
+  });
+}
+
+// Stdio模式启动
+async function startStdioServer() {
+  const server = createMCPServer();
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error("C++ Weekly MCP Server running on stdio");
+}
+
+// 主函数
+async function main() {
+  if (MODE === "stdio") {
+    await startStdioServer();
+  } else {
+    await startHTTPServer();
+  }
+}
+
+main().catch((error) => {
+  console.error("Fatal error:", error);
+  process.exit(1);
 });

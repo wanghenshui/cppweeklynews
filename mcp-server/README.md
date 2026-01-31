@@ -2,39 +2,62 @@
 
 这是一个用于C++中文周刊内容的MCP (Model Context Protocol) 服务器，可以让AI助手访问和总结周刊内容。
 
+## ⭐ 最新更新
+
+**🆕 新实现可用！** 基于官方SDK的StreamableHTTP传输，完全正常工作！
+
+👉 查看 [NEW_IMPLEMENTATION.md](./NEW_IMPLEMENTATION.md) 了解新实现
+
 ## 快速开始
+
+```bash
+npm start  # 启动HTTP服务器
+# 配置URL: http://localhost:3000/mcp
+```
 
 **新手？** 查看 [快速开始指南 (QUICKSTART.md)](./QUICKSTART.md) 5分钟完成部署！
 
 **使用示例？** 查看 [使用示例 (USAGE_EXAMPLES.md)](./USAGE_EXAMPLES.md) 学习如何提问。
 
-**HTTP模式？** 查看 [HTTP模式部署指南 (HTTP_MODE.md)](./HTTP_MODE.md) 了解如何部署为独立Web服务。
-
-**修复说明：** 查看 [FIXES.md](./FIXES.md) 了解HTTP模式的接口修复详情。
-
 ## 运行模式
 
-本MCP服务器支持两种运行模式：
-
-### 1. Stdio 模式（默认）
-
-由Claude Desktop直接启动，适合桌面使用：
+### 推荐：StreamableHTTP 模式（新实现）
 
 ```bash
-node index.js
+npm start
 ```
 
-### 2. HTTP/SSE 模式
+- ✅ 基于官方SDK标准传输
+- ✅ 单一端点（/mcp）
+- ✅ 自动处理协议细节
+- ✅ 完整测试验证
 
-作为独立Web服务运行，支持远程访问和多客户端：
+配置：
+```json
+{
+  "mcpServers": {
+    "cpp-weekly": {
+      "url": "http://localhost:3000/mcp"
+    }
+  }
+}
+```
+
+### Stdio 模式
 
 ```bash
-npm run start:http
-# 或
-./start-server.sh
+npm run start:stdio
 ```
 
-服务器启动在 `http://localhost:3000`
+适合Claude Desktop本地使用。
+
+### 旧实现（保留）
+
+SSE模式实现仍然可用，但推荐使用新实现：
+```bash
+npm run start:old-http  # 旧的HTTP/SSE实现
+npm run start:old-stdio # 旧的Stdio实现
+```
 
 ## 功能
 
