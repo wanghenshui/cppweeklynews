@@ -8,6 +8,32 @@
 
 **使用示例？** 查看 [使用示例 (USAGE_EXAMPLES.md)](./USAGE_EXAMPLES.md) 学习如何提问。
 
+**HTTP模式？** 查看 [HTTP模式部署指南 (HTTP_MODE.md)](./HTTP_MODE.md) 了解如何部署为独立Web服务。
+
+## 运行模式
+
+本MCP服务器支持两种运行模式：
+
+### 1. Stdio 模式（默认）
+
+由Claude Desktop直接启动，适合桌面使用：
+
+```bash
+node index.js
+```
+
+### 2. HTTP/SSE 模式
+
+作为独立Web服务运行，支持远程访问和多客户端：
+
+```bash
+npm run start:http
+# 或
+./start-server.sh
+```
+
+服务器启动在 `http://localhost:3000`
+
 ## 功能
 
 - **列出所有周刊** (`list_weeklies`): 获取所有可用周刊的期数列表

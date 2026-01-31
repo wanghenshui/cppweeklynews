@@ -1,0 +1,11 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "posts_directory": "../posts",
+  "logging": {
+    "level": "info",
+    "enabled": true
+  }
+}

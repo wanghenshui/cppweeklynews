@@ -8,7 +8,9 @@
     "cpp-weekly-mcp": "./index.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:http": "node http-server.js",
+    "start:stdio": "node index.js"
   },
   "keywords": [
     "mcp",
@@ -18,6 +20,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4"
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
   }
 }
