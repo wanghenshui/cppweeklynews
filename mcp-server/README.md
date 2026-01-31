@@ -10,6 +10,8 @@
 
 **HTTP模式？** 查看 [HTTP模式部署指南 (HTTP_MODE.md)](./HTTP_MODE.md) 了解如何部署为独立Web服务。
 
+**修复说明：** 查看 [FIXES.md](./FIXES.md) 了解HTTP模式的接口修复详情。
+
 ## 运行模式
 
 本MCP服务器支持两种运行模式：

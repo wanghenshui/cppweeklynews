@@ -2,6 +2,10 @@
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import {
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
+} from "@modelcontextprotocol/sdk/types.js";
 import express from "express";
 import cors from "cors";
 import fs from "fs/promises";
@@ -141,112 +145,8 @@ async function searchWeeklies(keyword) {
   return results;
 }
 
-// 工具处理函数
-async function handleToolCall(name, args) {
-  switch (name) {
-    case "list_weeklies": {
-      const weeklies = await getAllWeeklies();
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(
-              {
-                total: weeklies.length,
-                issues: weeklies,
-              },
-              null,
-              2
-            ),
-          },
-        ],
-      };
-    }
-
-    case "get_weekly": {
-      const { issue } = args;
-      const content = await getWeeklyContent(issue);
-      return {
-        content: [
-          {
-            type: "text",
-            text: content,
-          },
-        ],
-      };
-    }
-
-    case "get_weekly_summary": {
-      const { issue } = args;
-      const content = await getWeeklyContent(issue);
-      const summary = generateSummary(content);
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(summary, null, 2),
-          },
-        ],
-      };
-    }
-
-    case "get_latest_weekly": {
-      const weeklies = await getAllWeeklies();
-      const latest = weeklies[weeklies.length - 1];
-      const content = await getWeeklyContent(latest);
-      return {
-        content: [
-          {
-            type: "text",
-            text: `# 最新一期: ${latest}\n\n${content}`,
-          },
-        ],
-      };
-    }
-
-    case "search_weeklies": {
-      const { keyword } = args;
-      const results = await searchWeeklies(keyword);
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(
-              {
-                keyword: keyword,
-                totalMatches: results.length,
-                results: results,
-              },
-              null,
-              2
-            ),
-          },
-        ],
-      };
-    }
-
-    default:
-      throw new Error(`Unknown tool: ${name}`);
-  }
-}
-
-// 创建Express应用
-const app = express();
-
-// 启用CORS
-app.use(cors());
-app.use(express.json());
-
-// 健康检查端点
-app.get("/health", (req, res) => {
-  res.json({ status: "ok", service: "cpp-weekly-mcp-server" });
-});
-
-// SSE端点
-app.get("/sse", async (req, res) => {
-  console.log("New SSE connection established");
-
-  // 创建MCP服务器实例
+// 创建MCP服务器实例（全局单例）
+function createMCPServer() {
   const server = new Server(
     {
       name: "cpp-weekly-mcp-server",
@@ -259,8 +159,8 @@ app.get("/sse", async (req, res) => {
     }
   );
 
-  // 定义工具列表
-  server.setRequestHandler("tools/list", async () => {
+  // 定义工具列表 - 使用正确的Schema
+  server.setRequestHandler(ListToolsRequestSchema, async () => {
     return {
       tools: [
         {
@@ -330,12 +230,96 @@ app.get("/sse", async (req, res) => {
     };
   });
 
-  // 处理工具调用
-  server.setRequestHandler("tools/call", async (request) => {
+  // 处理工具调用 - 使用正确的Schema
+  server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const { name, arguments: args } = request.params;
 
     try {
-      return await handleToolCall(name, args);
+      switch (name) {
+        case "list_weeklies": {
+          const weeklies = await getAllWeeklies();
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify(
+                  {
+                    total: weeklies.length,
+                    issues: weeklies,
+                  },
+                  null,
+                  2
+                ),
+              },
+            ],
+          };
+        }
+
+        case "get_weekly": {
+          const { issue } = args;
+          const content = await getWeeklyContent(issue);
+          return {
+            content: [
+              {
+                type: "text",
+                text: content,
+              },
+            ],
+          };
+        }
+
+        case "get_weekly_summary": {
+          const { issue } = args;
+          const content = await getWeeklyContent(issue);
+          const summary = generateSummary(content);
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify(summary, null, 2),
+              },
+            ],
+          };
+        }
+
+        case "get_latest_weekly": {
+          const weeklies = await getAllWeeklies();
+          const latest = weeklies[weeklies.length - 1];
+          const content = await getWeeklyContent(latest);
+          return {
+            content: [
+              {
+                type: "text",
+                text: `# 最新一期: ${latest}\n\n${content}`,
+              },
+            ],
+          };
+        }
+
+        case "search_weeklies": {
+          const { keyword } = args;
+          const results = await searchWeeklies(keyword);
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify(
+                  {
+                    keyword: keyword,
+                    totalMatches: results.length,
+                    results: results,
+                  },
+                  null,
+                  2
+                ),
+              },
+            ],
+          };
+        }
+
+        default:
+          throw new Error(`Unknown tool: ${name}`);
+      }
     } catch (error) {
       return {
         content: [
@@ -349,20 +333,46 @@ app.get("/sse", async (req, res) => {
     }
   });
 
+  return server;
+}
+
+// 创建Express应用
+const app = express();
+
+// 启用CORS
+app.use(cors());
+app.use(express.json());
+
+// 健康检查端点
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", service: "cpp-weekly-mcp-server" });
+});
+
+// SSE端点 - 每个连接创建独立的服务器实例和传输
+app.get("/sse", async (req, res) => {
+  console.log("New SSE connection established");
+
+  // 为每个连接创建独立的MCP服务器实例
+  const server = createMCPServer();
+
   // 创建SSE传输
-  const transport = new SSEServerTransport("/messages", res);
+  const transport = new SSEServerTransport("/message", res);
+
+  // 连接服务器和传输
   await server.connect(transport);
 
   // 连接关闭时清理
   req.on("close", () => {
     console.log("SSE connection closed");
+    server.close();
   });
 });
 
-// POST端点用于发送消息
-app.post("/messages", async (req, res) => {
-  // SSE传输会处理这些消息
-  res.json({ status: "received" });
+// POST端点用于接收客户端消息
+app.post("/message", async (req, res) => {
+  console.log("Received message:", req.body);
+  // SSE传输会自动处理这些消息
+  res.status(202).json({ status: "accepted" });
 });
 
 // 启动服务器
@@ -370,6 +380,7 @@ app.listen(PORT, HOST, () => {
   console.log(`C++ Weekly MCP HTTP Server running at:`);
   console.log(`  - Health check: http://${HOST}:${PORT}/health`);
   console.log(`  - SSE endpoint: http://${HOST}:${PORT}/sse`);
-  console.log(`  - Messages endpoint: http://${HOST}:${PORT}/messages`);
+  console.log(`  - Message endpoint: http://${HOST}:${PORT}/message`);
   console.log(`\nServer is ready to accept connections.`);
+  console.log(`\nTo test: curl http://${HOST}:${PORT}/health`);
 });
